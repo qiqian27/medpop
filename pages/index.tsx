@@ -58,8 +58,11 @@ const Home: NextPage = () => {
       </div>
 
       <div className="py-5 px-6 lg:px-10">
-        <section id="landing">
-          <div className="flex justify-center mt-[4rem] lg:mt-[7rem]">
+        <section
+          id="landing"
+          className="h-[90vh] flex items-center lg:items-start justify-center lg:h-screen"
+        >
+          <div className="flex justify-center mt-[2rem] lg:mt-[7rem]">
             {/* Device and App Photo */}
             <div className="pt-6">
               <img
@@ -71,20 +74,20 @@ const Home: NextPage = () => {
             {/* Introduce */}
             <div className="lg:ml-10 lg:mt-14">
               <p
-                className="text-center lg:text-left text-4xl lg:text-5xl font-bold text-[#2E2C9C]
+                className="text-center lg:text-left text-4xl md:text-5xl font-bold text-[#2E2C9C]
               xl:text-6xl 3xl:text-7xl"
               >
                 MedPop&reg;{" "}
               </p>
               <p
-                className="text-center lg:text-left text-2xl lg:text-4xl font-bold text-[#2E2C9C] mt-1 lg:mt-3
+                className="text-center lg:text-left text-xl md:text-4xl font-bold text-[#2E2C9C] mt-1 md:mt-3
               xl:text-5xl 3xl:text-6xl"
               >
                 Your Adherence Companion{" "}
               </p>
               <div>
                 <img
-                  className="lg:hidden w-[13rem] h-auto mx-auto -translate-x-6 mt-[1rem]"
+                  className="lg:hidden w-[13rem] md:w-[22rem] h-auto mx-auto -translate-x-6 mt-[1rem]"
                   alt="MedPop App"
                   src="/medpop-app.png"
                 />
@@ -92,29 +95,29 @@ const Home: NextPage = () => {
               <br />
               <p
                 className="text-base text-gray-700
-              xl:text-lg 3xl:text-xl"
+              md:text-lg lg:text-base xl:text-lg 3xl:text-xl"
               >
                 Seamlessly Synced to Your Health Routine. <br />
                 Connect effortlessly, set your schedule,{" "}
-                <br className="lg:hidden" />
-                and never miss a dose <br className="hidden lg:inline" />
+                <br className="md:hidden" />
+                and never miss a dose <br className="hidden md:inline" />
                 with personalized reminders, wherever you are.
               </p>
               <br />
-              <div className="flex justify-center space-x-5 mt-0 lg:mt-5 xl:mt-10 3xl:mt-16">
+              <div className="flex justify-center space-x-5 mt-0 md:mt-10 lg:mt-5 xl:mt-10 3xl:mt-16">
                 <a
                   type="button"
                   href="#app"
-                  className="hover:cursor-pointer text-[#2E2C9C] hover:text-white border-[0.1rem] border-[#2E2C9C] hover:border-green-500 hover:bg-green-500 font-medium rounded-3xl text-sm px-10 pt-2.5 pb-3 text-center transition-all duration-200
-                  xl:text-base 3xl:text-lg"
+                  className="hover:cursor-pointer text-[#2E2C9C] hover:text-white border-[0.1rem] border-[#2E2C9C] hover:border-green-500 hover:bg-green-500 font-medium rounded-3xl text-xs px-10 pt-2.5 pb-3 text-center transition-all duration-200
+                  md:text-lg lg:text-base 3xl:text-lg"
                 >
                   Learn More
                 </a>
                 <a
                   type="button"
                   href="#download"
-                  className="hover:cursor-pointer text-[#2E2C9C] hover:text-white border-[0.1rem] border-[#2E2C9C] hover:border-green-500 hover:bg-green-500 font-medium rounded-3xl text-sm px-10 pt-2.5 pb-3 text-center transition-all duration-200
-                  xl:text-base 3xl:text-lg"
+                  className="hover:cursor-pointer text-[#2E2C9C] hover:text-white border-[0.1rem] border-[#2E2C9C] hover:border-green-500 hover:bg-green-500 font-medium rounded-3xl text-xs px-10 pt-2.5 pb-3 text-center transition-all duration-200
+                  md:text-lg lg:text-base 3xl:text-lg"
                 >
                   Get It Now
                 </a>
@@ -123,11 +126,11 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section id="app">
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:mt-[8rem]">
+        <section id="app" className="mt-[8rem] lg:mt-[0rem]">
+          <div className="flex flex-col lg:flex-row justify-center items-center">
             {/* Introduce */}
             <div>
-              <p className="text-3xl lg:text-4xl text-center font-bold text-[#2E2C9C] mt-[5rem] mb-[2rem]">
+              <p className="text-3xl lg:text-4xl text-center font-bold text-[#2E2C9C] mb-[2rem]">
                 Key Features
               </p>
               {/* App Photo Mobile*/}
@@ -176,7 +179,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             {/* App Photo WEB*/}
-            <div className="hidden lg:inline-flex ml-10 flex-col mt-[10rem]">
+            <div className="hidden lg:inline-flex ml-10 flex-col mt-[4rem]">
               <div className="w-[25rem] h-[25rem] items-center justify-center flex relative">
                 <img
                   className="w-[12rem] h-auto z-[50]"

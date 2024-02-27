@@ -13,14 +13,14 @@ import { GoGoal } from "react-icons/go";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Head>
         <title>MedPop&reg;</title>
         <link rel="icon" href="/web-logo.png" />
       </Head>
       {/* Nav Bar  */}
       <div id="navigation">
-        <div className="fixed w-full flex justify-between items-center py-2 px-3 pl-6 lg:py-3 lg:px-10 border-b-[0.2rem] border-[#FFFFFF] bg-gradient-to-br from-blue-500 to-green-500 z-[1000]">
+        <div className="fixed w-full flex justify-between items-center py-2 px-3 pl-6 lg:py-3 lg:px-10 QHD:py-6 QHD:px-20 border-b-[0.2rem] border-[#FFFFFF] bg-gradient-to-br from-blue-500 to-green-500 z-[1000]">
           {/* App Icon */}
           <a
             href="#"
@@ -28,11 +28,11 @@ const Home: NextPage = () => {
             className="flex space-x-2 hover:cursor-pointer"
           >
             <img
-              className="w-[2rem] h-auto"
+              className="w-[2rem] QHD:w-[2.5rem] h-auto"
               alt="MedPop Logo"
               src="/medpop-logo.png"
             />
-            <p className="flex items-center justify-center text-lg lg:text-2xl font-bold text-[#FFFFFF]">
+            <p className="flex items-center justify-center text-lg lg:text-2xl QHD:text-3xl font-bold text-[#FFFFFF]">
               MedPop&reg;
             </p>
           </a>
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             <a
               type="button"
               href="#download"
-              className="hidden lg:inline text-white border-b-[0.15rem] border-white/0 hover:border-white font-medium text-base px-[0.3rem] pt-2.5 pb-[0.25rem] rounded-sm text-center transition-all duration-200 mx-2"
+              className="hidden lg:inline text-white border-b-[0.15rem] border-white/0 hover:border-white font-medium text-base QHD:text-2xl px-[0.3rem] pt-2.5 pb-[0.25rem] rounded-sm text-center transition-all duration-200 mx-2"
             >
               Get It Now
             </a>
@@ -66,22 +66,22 @@ const Home: NextPage = () => {
             {/* Device and App Photo */}
             <div className="pt-6">
               <img
-                className="hidden lg:inline lg:w-[20rem] xl:w-[25rem] 3xl:w-[30rem] h-auto"
+                className="hidden lg:inline lg:w-[20rem] xl:w-[25rem] 3xl:w-[30rem] QHD:w-[40rem] h-auto"
                 alt="MedPop App"
                 src="/medpop-app.png"
               />
             </div>
             {/* Introduce */}
-            <div className="lg:ml-10 lg:mt-14">
+            <div className="lg:ml-10 lg:mt-14 QHD:mt-24">
               <p
                 className="text-center lg:text-left text-4xl md:text-5xl font-bold text-[#2E2C9C]
-              xl:text-6xl 3xl:text-7xl"
+              xl:text-6xl 3xl:text-7xl QHD:text-8xl"
               >
                 MedPop&reg;{" "}
               </p>
               <p
                 className="text-center lg:text-left text-xl md:text-4xl font-bold text-[#2E2C9C] mt-1 md:mt-3
-              xl:text-5xl 3xl:text-6xl"
+              xl:text-5xl 3xl:text-6xl QHD:text-7xl"
               >
                 Your Adherence Companion{" "}
               </p>
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
               <br />
               <p
                 className="text-base text-gray-700
-              md:text-lg lg:text-base xl:text-lg 3xl:text-xl"
+              md:text-lg lg:text-base xl:text-lg 3xl:text-xl QHD:text-3xl QHD:mt-[1rem]"
               >
                 Seamlessly Synced to Your Health Routine. <br />
                 Connect effortlessly, set your schedule,{" "}
@@ -104,12 +104,12 @@ const Home: NextPage = () => {
                 with personalized reminders, wherever you are.
               </p>
               <br />
-              <div className="flex justify-center space-x-5 mt-0 md:mt-10 lg:mt-5 xl:mt-10 3xl:mt-16">
+              <div className="flex justify-center space-x-5 QHD:space-x-7 mt-0 md:mt-10 lg:mt-5 xl:mt-10 3xl:mt-16">
                 <a
                   type="button"
                   href="#app"
                   className="hover:cursor-pointer text-[#2E2C9C] hover:text-white border-[0.1rem] border-[#2E2C9C] hover:border-green-500 hover:bg-green-500 font-medium rounded-3xl text-xs px-10 pt-2.5 pb-3 text-center transition-all duration-200
-                  md:text-lg lg:text-base 3xl:text-lg"
+                  md:text-lg lg:text-base 3xl:text-lg QHD:text-2xl QHD:px-14 QHD:pt-3.5 QHD:pb-4"
                 >
                   Learn More
                 </a>
@@ -117,7 +117,7 @@ const Home: NextPage = () => {
                   type="button"
                   href="#download"
                   className="hover:cursor-pointer text-[#2E2C9C] hover:text-white border-[0.1rem] border-[#2E2C9C] hover:border-green-500 hover:bg-green-500 font-medium rounded-3xl text-xs px-10 pt-2.5 pb-3 text-center transition-all duration-200
-                  md:text-lg lg:text-base 3xl:text-lg"
+                  md:text-lg lg:text-base 3xl:text-lg QHD:text-2xl QHD:px-14 QHD:pt-3.5 QHD:pb-4"
                 >
                   Get It Now
                 </a>
@@ -126,8 +126,11 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section id="app" className="mt-[8rem] lg:mt-[0rem]">
-          <div className="flex flex-col lg:flex-row justify-center items-center">
+        <section
+          id="app"
+          className="mt-[8rem] lg:mt-[0rem] QHD:scale-[130%] border-2 border-red-500/0"
+        >
+          <div className="flex flex-col lg:flex-row justify-center items-center QHD:mt-[5rem]">
             {/* Introduce */}
             <div>
               <p className="text-3xl lg:text-4xl text-center font-bold text-[#2E2C9C] mb-[2rem]">
@@ -202,7 +205,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section id="device">
+        <section id="device" className="QHD:scale-[130%] QHD:mt-[15rem]">
           <div className="flex flex-col lg:flex-row justify-center items-center mt-[3rem] lg:mt-[6rem]">
             {/* Device Photo */}
             <div className="lg:inline flex flex-col">
@@ -256,7 +259,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section id="step">
+        <section id="step" className="QHD:scale-[130%] QHD:mt-[25rem]">
           <div className="items-center mt-[6rem] lg:mt-[8rem] xl:mt-[14rem] 3xl:mt-[16rem] ">
             <p className="text-3xl lg:text-4xl text-center font-bold text-[#2E2C9C] mb-[0.5rem]">
               How MedPop Works
@@ -298,7 +301,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section id="download">
+        <section id="download" className="QHD:scale-[130%] QHD:mt-[25rem]">
           <div className="flex items-center justify-center mt-[8rem] lg:mt-[10rem] xl:mt-[14rem] 3xl:mt-[16rem] mb-[2rem] lg:mb-[5rem] xl:mb-[8rem] 3xl:mb-[14rem]">
             <div>
               <p className="text-3xl lg:text-4xl 3xl:text-5xl text-center font-bold text-[#2E2C9C] mb-[0.5rem] 3xl:mb-[1rem]">
@@ -335,7 +338,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </div>
-      <div className="w-full h-[4rem] border-t-2 border-[#FFFFFF] bg-gradient-to-br from-blue-500 to-green-500 z-[1000]"></div>
+      <div className="w-full h-[4rem] QHD:h-[8rem] border-t-2 border-[#FFFFFF] bg-gradient-to-br from-blue-500 to-green-500 z-[1000]"></div>
     </div>
   );
 };

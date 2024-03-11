@@ -211,14 +211,13 @@ const Home: NextPage = () => {
             <div className="lg:inline flex flex-col">
               <div className="lg:w-[25rem] lg:h-[25rem] items-center justify-center flex relative">
                 <img
-                  className="w-[11rem] lg:w-[18rem] h-auto z-[20]"
+                  className="w-[5rem] lg:w-[9rem] h-auto z-[20]"
                   alt="MedPop App"
                   src="/device.png"
                 />
-                <div className="hidden lg:inline-flex absolute space-x-4">
-                  <div className="w-[9rem] h-[16rem] bg-[#2281C7]/75 rounded-2xl z-[10] translate-y-[20%]"></div>
-                  <div className="w-[9rem] h-[16rem] bg-green-500/75 rounded-2xl z-[10] translate-y-[-20%]"></div>
-                </div>
+                <div className="hidden lg:inline absolute w-[14rem] h-[14rem] bg-green-500/75 rounded-full top-[-8%] right-0 z-[10]"></div>
+                <div className="hidden lg:inline absolute w-[12rem] h-[12rem] bg-[#2281C7]/75 rounded-full top-50% left-[5%] z-[10]"></div>
+                <div className="hidden lg:inline absolute w-[9rem] h-[9rem] bg-green-500/75 rounded-full bottom-0 right-[10%] z-[10]"></div>
               </div>
               <div className="flex items-center justify-center mt-[1rem] mb-[2rem] lg:mb-[0rem] lg:mt-[2rem]">
                 <div className="hidden lg:inline rotate-[30deg] bg-green-500 px-[0.2rem] py-3" />
